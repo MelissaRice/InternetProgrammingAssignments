@@ -10,6 +10,8 @@ purpose: quick test of urllib2 library
 import urllib2
 
 urlString = 'http://briandorsey.info/uwpython/week01/email_vm.py'
+outputFilename = 'C:/A/eclipse/projects/InternetProgrammingLabs/src/Week02/Week02LabA1-Output.txt'
+
 url = urllib2.urlopen(urlString)
 metadata = url.info()
 urlAddress = url.geturl()
@@ -20,7 +22,6 @@ output += "\n===> url metadata (url.info()): %s " % metadata
 output += "\n===> url content: "
 output += ''.join(content)
 print output
-outputFilename = 'C:/A/eclipse/projects/InternetProgrammingLabs/src/Week02/Week02LabA1-Output.txt'
 outFile = open(outputFilename,'w')
 outFile.write(output)
 outFile.close()
