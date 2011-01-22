@@ -10,7 +10,10 @@ purpose: quick test of urllib2 library
 
 import urllib2
 
-urlsFile = open('C:/A/eclipse/projects/InternetProgrammingLabs/src/Week02/urls.txt')
+inputFilename = 'C:/A/eclipse/projects/InternetProgrammingLabs/src/Week02/urls.txt'
+outputFilenameBase = 'C:/A/eclipse/projects/InternetProgrammingLabs/src/Week02/url'
+
+urlsFile = open(inputFilename)
 urls = urlsFile.readlines()
 j = 0
 print
@@ -21,7 +24,7 @@ for url in urls:
     urlAddress = urlObject.geturl()
     content = urlObject.readlines()
     content = ''.join(content)
-    outFilename = "C:/A/eclipse/projects/InternetProgrammingLabs/src/Week02/url" + str(j) + ".html"
+    outFilename = outputFilenameBase + str(j) + ".html"
     print "Saving contents of %s" % urlAddress
     print "To file: %s " % outFilename 
     print "Sanitized url: %s " % urllib2.quote(urlAddress)
