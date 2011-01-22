@@ -1,6 +1,6 @@
 '''
 Week2LabA1.py
-last revised: 17 January 2011
+last revised: 21 January 2011
 author: Melissa Rice (UWNetID: mlrice)
 purpose: quick test of urllib2 library
          assignment: use urllib2 to download and save a url: 

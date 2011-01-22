@@ -1,7 +1,7 @@
-The url object: <addinfourl at 44204200 whose fp = <socket._fileobject object at 0x0292B5F0>> 
+The url object: <addinfourl at 43876520 whose fp = <socket._fileobject object at 0x028DB5F0>> 
 ===> url address (url.geturl()): http://briandorsey.info/uwpython/week01/email_vm.py 
 ===> url metadata (url.info()): Server: nginx
-Date: Sat, 22 Jan 2011 06:21:36 GMT
+Date: Sat, 22 Jan 2011 06:54:57 GMT
 Content-Type: application/octet-stream
 Content-Length: 891
 Last-Modified: Wed, 12 Jan 2011 18:28:19 GMT
